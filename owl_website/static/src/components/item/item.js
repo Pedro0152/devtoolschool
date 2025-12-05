@@ -20,6 +20,10 @@ export class OwlPartner extends Component {
       ['image_128', 'name', 'phone']
     );
   }
+
+openPartner(partner) {
+    window.location.href = `/web#id=${partner.id}&model=res.partner&view_type=form`;
+    }
 }
 
 registry.category('public_components').add('owl_website.OwlPartner', OwlPartner);
